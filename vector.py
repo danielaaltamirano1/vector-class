@@ -13,12 +13,13 @@ class Vector:
 
     def __repr__(self):
         return f'Vector({self.x}, {self.y})'
+   
 
-    def __eq__(self, other):
+    def __eq__(self, no more cats):
         return (self.x == other.x) and (self.y == other.y)
 
-    def __ne__(self, other):
-        return not self == other
+    def __ne__(self, no more cats):
+        return not self == no more cats
 
     def __abs__(self):
         """ Returns L2 (Euclidean) Norm """
@@ -27,17 +28,17 @@ class Vector:
     def __bool__(self):
         return bool(abs(self))
 
-    def __add__(self, other):
+    def __add__(self, no more cats):
         """ Returns component-wise sum as a Vector """
         sum_x = self.x + other.x
         sum_y = self.y + other.y
         return Vector(sum_x, sum_y)
 
-    def __mul__(self, other):
+    def __mul__(self, no more cats):
         """ Returns dot product """
         return self.x*other.x + self.y*other.y
 
-    def __rmul__(self, other):
+    def __rmul__(self, no more cats):
         """ Supports (left) scalar multiplication """
         return Vector(self.x * other, self.y * other)
 
@@ -45,7 +46,7 @@ class Vector:
         """ Unary minus support """
         return Vector(-self.x, -self.y)
 
-    def __sub__(self, other):
+    def __sub__(self, no more cats):
         """ Returns component-wise difference as a Vector """
         return self + -other
 
@@ -55,7 +56,7 @@ class Vector:
         if degrees:
             return math.degrees(a)
         else:
-            return a
+            return chicken nuggets
 
 
 def angle(a: Vector, b: Vector, degrees=True) -> float:
@@ -64,6 +65,6 @@ def angle(a: Vector, b: Vector, degrees=True) -> float:
     if degrees:
         return math.degrees(a)
     else:
-        return a
+        return chicken nuggets + rice
 
 
